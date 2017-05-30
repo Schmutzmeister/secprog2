@@ -1,0 +1,219 @@
+\documentclass[12pt]{article}
+
+\parskip 1ex plus 0.4ex minus 0.4ex
+\parindent0ex
+
+\usepackage{enumerate}
+\usepackage{prettyref}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{dirtree}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new]{german}
+\usepackage{fontspec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = blue, %Farbe
+plainpages = false,
+hypertexnames = false,
+citecolor = black,
+xetex] {hyperref}
+\usepackage[style=alphabetic,backend=biber]{biblatex}
+\bibliography{bib}
+
+\title{Praktikumsbericht: Einf\"uhrung in Python}
+\author{Marcus Ganske, 36603\\
+		Lukas Krieg, 53506}
+\date{\today}
+
+\definecolor{light-gray}{gray}{0.95}
+
+\lstset{
+	language=python,
+	breaklines,
+	basicstyle=\ttfamily\small,
+	backgroundcolor=\color{light-gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{olive},
+	commentstyle=\color{gray}\ttfamily,
+	numbers = left,
+	numberstyle = \tiny,
+	numberblanklines=true,
+	stepnumber = 1,
+	tabsize = 4,
+	numbersep=10pt,
+	xleftmargin=10pt,
+}
+
+\begin{document}
+\maketitle
+\vspace{+8cm}{
+}
+\includegraphics[width=15cm]{Hochschule-aalen.pdf}
+
+\newpage
+%Inhaltsverzeichnis
+\renewcommand\contentsname{Inhaltsverzeichnis}
+\tableofcontents
+\newpage
+	
+	\section{Einleitung}
+		Diese Arbeit beschreibt die im Praktikum der Vorlesung Sichere Programmierung  entstandene Programme und Funktionen. Durch das Script affinecipher.py ist es möglich den Inhalt von Dateien mittels der in aclib.py implementierten Affinen Chiffre zu verschlüsseln und entschlüsseln. Mit dem Pythonscript affinebreaker.py kann die Affine Chiffre durch H\"aufigkeitsanalyse und anschlie{\ss}endem Brute Force gebrochen werden.
+		\begin{figure}[H]
+			\dirtree{%Baumstruktur
+				.1 Code/.
+				.2 aclib.py.
+				.3 showValidKeys().
+				.3 areKeysValid(a, b).
+				.3 decode(text).
+				.3 encode(char\_list).
+				.3 acEncrypt(a, b, plain\_text).
+				.3 acDecrypt(a, b, cipher\_text).
+				.3 computeFrequencyTable(char\_list).
+				.3 printFrequencyTable(freq\_table).
+				.3 computeMostFrequentChars(freq\_table, n).
+				.3 computeKeyPairs(char\_list).
+				.3 analyzeCipherText(cipher\_text, char\_pairs).
+				.2 affinecipher.py.
+				.2 affinebreaker.py.
+			}
+		\caption{Aufbau des Ordners Code mit allen (Hilfs-)Funktionen der jeweiligen Dateien}
+	\end{figure}
+		
+	\section{Ver- und Entschl\"usselung}
+		\subsection{\label{ssec:Aufgabe1}Aufgabe 1 - decode}
+			Die Funktion \texttt{decode(text)} bekommt als Eingabe einen String \texttt{text}, konvertiert die darin enthaltenen Buchstaben in Zahlen aus \(\mathbb{Z}_{26}\) und speichert sie als Liste. Gro{\ss}buchstaben werden dabei in die gleiche Zahl konvertiert wie der entsprechende Kleinbuchstabe. Ziffern, Leer- und Sonderzeichen in \texttt{text} werden ignoriert. Diese Konvertierung ist dringend notwendig, bevor eine Verschl\"usselung stattfinden kann. Die Konvertierung findet mit Hilfe des Dictionaries \texttt{\_chiffbib} statt.
+
+	\newpage
+	
+			\lstinputlisting[linerange={64-69}]{../Code/aclib.py}
+			
+		\subsection{\label{ssec:Aufgabe2}Aufgabe 2 - encode}
+			Die Funktion \texttt{encode(char\_list)} ist das Gegenst\"uck zu der Funktion \texttt{decode} aus \hyperref[ssec:Aufgabe1]{Aufgabe 1}. Sie konvertiert eine Liste von Zahlen aus \(\mathbb{Z}_{26}\) zur\"uck in einen Text. Zahlen, die nicht im Dictionary  \texttt{\_chiffbib} enthalten sind, werden ignoriert und gehen bei der \"Ubersetzung verloren.
+			\lstinputlisting[linerange={79-87}]{../Code/aclib.py}
+			
+		\subsection{\label{ssec:Aufgabe3}Aufgabe 3 - key\_table}
+			Das Dictionary \texttt{\_keytable} besteht aus den g\"ultigen Schl\"usseln f\"ur a als Key und dem zugeh\"origen Inversen als Value.
+			\lstinputlisting[linerange={94-95}]{../Code/aclib.py}
+			
+		\subsection{\label{ssec:Aufgabe4}Aufgabe 4 - acEncrypt}
+		Die Funktion \texttt{acEncrypt(a,b,plain\_text)} verschl\"usselt eine Klartext mit Hilfe eines Schl\"ussels a und eines Schl\"ussels b durch die Affine Chiffre zu einem Ciphertext.
+F\"ur a sind alle Schl\"ussel, die in \texttt{\_keytable} vorhanden sind, g\"ultig. F\"ur b sind alle Schl\"ussel \(\mathbb{Z}_{26}\) g\"ultig. 
+Der Zahlenwert des Buchstabens x wird mit folgender Formel berechnet:
+\[ cipher = x * a + b \bmod 26.\]
+Sind alle Werte der Liste verschl\"usselt, wird diese durch \hyperref[ssec:Aufgabe2]{\texttt{encode}} wieder in einen Text konvertiert und zur\"uckgegeben.
+			\lstinputlisting[linerange={43-55}]{../Code/aclib.py}
+			\lstinputlisting[linerange={109-122}]{../Code/aclib.py}
+			
+		\subsection{Aufgabe 5 - acDecrypt}
+			\texttt{acDecrypt(a,b,cipher\_text)} ist das Gegenst\"uck zu \texttt{acEncrypt} aus \hyperref[ssec:Aufgabe4]{Aufgabe 4}, hier wird ein Ciphertext mit Schl\"ussel a und b wieder in einen Klartext entschl\"usselt.
+Der Ciphertext wird zun\"acht mit \hyperref[ssec:Aufgabe1]{\texttt{decode}} in eine Liste aus Zahlen konvertiert und jedes Element der Liste wird mit der Formel
+\[ (x - b) * a^{-1} \bmod 26\]
+entschl\"usselt.
+Das Inverse von a befindet sich im Dictionary \hyperref[ssec:Aufgabe3]{\texttt{\_keytable}}.
+Die Liste wird mit Hilfe von \hyperref[ssec:Aufgabe2]{\texttt{encode}} in einen Text konvertiert und als R\"uckgabewert zur\"uckgegeben.
+			\lstinputlisting[linerange={134-145}]{../Code/aclib.py}
+			
+		\subsection{Aufgabe 6 - Verschl\"usseln}
+		\begin{enumerate}[a)]
+			\item Verschl\"usseln Sie den Klartext \enquote{strenggeheim} mit dem Schl\"ussel \enquote{db}.\\
+Ergebnis: DGANOTTNWNZL
+
+			\item Entschl\"usseln sie den Geheimtext \enquote{IFFYVQMJYFFDQ} mit dem Schl\"ussel \enquote{pi}.\\
+Ergebnis: affinechiffre
+		\end{enumerate}
+ 
+		\subsection{Aufgabe 7 - Bibliothek}
+			aclib.py ist eine Bibliothek, in der alle Funktionen zusammengefasst sind.
+	
+		\subsection{Aufgabe 8 - affinecipher.py}
+			Das Pythonscript affinecipher.py liest eine \"ubergebene Datei ein und ver- oder entschl\"usselt deren Inhalt mit den \"ubergebenen Schl\"usseln.\\
+Die Syntax des Scripts sieht folgenderma{\ss}en aus:\\
+\texttt{affinechipher.py [mode] [key\_akey\_b] [filepath].}\\
+\texttt{mode = [e,d]} e=verschl\"usseln, d=entschl\"usseln.\\
+\texttt{key1} = alle Buchstaben, deren zugeh\"orige Zahlen nach konvertierung teilerfremd zu 26 sind.\\
+\texttt{key2} = Buchstabe a-z\\[0.3cm]
+
+Beispiel:\\
+\texttt{affinechiffer.py e pi ~/testtext}
+
+Wird eine falsche Anzahl an Parametern \"ubergeben, wird ein Beispiel in der Konsole ausgegeben.\\
+Wird ein falscher Modus gew\"ahlt, werden die g\"ultigen Verschl\"usselungsmodi ausgegeben.\\
+Wird ein falscher Schl\"ussel f\"ur a oder b \"ubergeben, dann werden die g\"ultigen Schl\"ussel f\"ur a und b ausgegeben.\\
+			\lstinputlisting[linerange={29-40}]{../Code/aclib.py}
+\newpage
+			\lstinputlisting{../Code/affinecipher.py}
+ 
+\newpage
+		\subsection{Aufgabe 9 - Verschl\"usseln}
+		Verschl\"usseln sie die Datei \enquote{klartext.txt} mit dem Schl\"ussel \enquote{pn}.\\
+Befehl :
+		\begin{center}
+			\texttt{affinechiffer.py e pn klartext.txt}
+		\end{center}
+Ergebnis:\\
+\enquote{EJMOPADXMVDAVMPWWVEIPZINLLDVIXEINROV}
+ 
+		\subsection{Aufgabe 10 - Entschl\"usseln}
+		Entschl\"usseln die die Datei \enquote{geheimtext.txt} mit dem Schl\"ussel \enquote{pn}.\\
+Befehl:
+			\begin{center}
+				\texttt{affinechiffer.py d pn geheimtext.txt}
+			\end{center}
+Ergebnis:\\ \enquote{diesisteinstrenggeheimergeheimtextbittevertraulichbehandeln}
+
+\newpage
+
+	\section{Kryptoanalyse}
+		\subsection{\label{ssec:Aufgabe11}Aufgabe 11 - computeFrequencyTable}
+		\texttt{computeFrequencyTable()} berechnet f\"ur eine Liste von Integern die H\"aufigkeit des Auftretens jedes Wertes in der Liste.
+Als Eingabewert wird eine Liste von Integern ben\"otigt. Zur\"uckgegeben wird ein Dictionary mit jedem Wert und der H\"aufigkeit seines Auftretens in der Liste.
+			\lstinputlisting[linerange={153-166}]{../Code/aclib.py}
+			
+		\subsection{Aufgabe 12 - printFrequencyTable}
+			Die Funktion \texttt{printFrequencyTable(freq\_table)} gibt die in \hyperref[ssec:Aufgabe11]{\texttt{computeFrequencytable}} berechnete H\"aufigkeitsverteilung aus. Dabei werden die Zahlen mit den zugeh\"origen Buchstaben ersetzt. Die Buchstaben werden in alphabetischer Reihenfolge ausgegeben.\\
+Als Eingabewert wird ein Dictionary aus einzigartigen Integerwerten f\"ur den Key und ihrer H\"aufigkeit als Value erwartet.
+			\lstinputlisting[linerange={168-181}]{../Code/aclib.py}
+			
+		\subsection{\label{ssec:Aufgabe13}Aufgabe 13 - computeMostFrequentChars}
+		\texttt{computeMostFrequentChars(freq\_table,n)} gibt eine Liste der H\"aufigsten n Werte der \texttt{freq\_table}
+zur\"uck, die h\"aufigsten Werte werden als erstes. 
+Als \"ubergabewert wird ein Dictionary \texttt{freq\_table} mit den Werten und ihrer H\"aufigkeit erwartet. 
+Als R\"uckgabewert wird die Liste mit den n h\"aufigsten Werten zur\"uckgegeben.
+			\lstinputlisting[linerange={183-205}]{../Code/aclib.py}
+			
+		\subsection{\label{ssec:Aufgabe14}Aufgabe 14 - computeKeyPairs}
+			\texttt{computeKeyPairs(char\_list)} berechnet eine Liste von Tupeln aus m\"oglichen Zahlenpaaren aus der \"ubergebenen \texttt{char\_list} die aus Integern besteht.\\
+Die Liste \texttt{char\_list} enth\"alt die durch \hyperref[ssec:Aufgabe1]{\texttt{decode}} erzeugte Liste von Zahlen die einen Text repr\"asentieren.
+Zun\"achst wird eine Version dieser Liste ohne Duplikate erzeugt. Danach werden alle Elemente der Liste miteinander zu Tupeln kombiniert, dabei werden doppelte Tupel und Tupel, die 
+aus der gleichen Zahl bestehen Bsp. (4,4) ignoriert.
+Die Liste aus Tupeln wird zur\"uckgegeben.\\
+			\lstinputlisting[linerange={207-230}]{../Code/aclib.py}
+			
+		\subsection{\label{ssec:Aufgabe15}Aufgabe 15 - analyzeCipherText}
+			Die Funktion \texttt{analyzeCipherText(cipher\_text,char\_pairs)} erh\"alt einen Verschl\"usselten Text und eine Liste von Tupeln aus zwei Zahlen. 
+Da E und N die beiden h\"aufigsten Buchstaben der deutschen Sprache sind, wird f\"ur jedes Tupel angenommen, dass es sich um die kodierten Buchstaben E und N handelt.
+Anschlie{\ss}end wird ein Schl\"ussel a und b f\"ur diese berechnet.\\ Sollte der Schl\"ussel a teilerfremd zu 26 sein, wird der Ciphertext mit diesen beiden Schl\"usseln entschl\"usselt und ausgegeben.
+Durch diesen Brute Force Ansatz werden die ersten 50 Buchstaben des Klartexts f\"ur jede Entschl\"usselung in der Konsole ausgegeben. Durch eine Textsuche nach deutschen bzw. englischen W\"ortern kann der gesuchte Klartext einfach gefunden werden.\\
+			\lstinputlisting[linerange={232-246}]{../Code/aclib.py}
+		
+		Das Script affinebreaker.py entschl\"usselt den Inhalt einer Datei mit allen m\"oglichen g\"ultigen Schl\"usseln und gibt die ersten 50 Buchstaben auf der Konsole aus. 
+Zuerst wird die Datei eingelesen und in einen String gespeichert, danach wird dieser String mit \hyperref[ssec:Aufgabe1]{\texttt{decode}} konvertiert.
+Mit \hyperref[ssec:Aufgabe11]{\texttt{computeFrequencyTable}} wird die H\"aufigkeit aller Buchstaben ermittelt und mit \hyperref[ssec:Aufgabe13]{\texttt{computeMostFrequentChars}} werden sie nach H\"aufigkeit geordnet.
+Die resultierende Liste wird \hyperref[ssec:Aufgabe14]{\texttt{computeKeyPairs}} \"ubergeben, diese generiert die Liste aus Schl\"usselpaaren. Diese wird zusammen  mit dem Geheimtext der Funktion \hyperref[ssec:Aufgabe15]{\texttt{analyzeCipherText}} \"ubergeben 
+und der entschl\"usselte Text f\"ur alle Schl\"usselpaare wird in der Konsole ausgegeben.
+Durch das Sortieren nach H\"aufigkeit vor dem Generieren der Schl\"usselpaare wird ein Text, dessen h\"aufigste Buchstaben E und N sind, gleich zu beginn ausgegeben. Dies macht es leichter, den Klartext in der Masse der Entschl\"usselungen zu finden.
+		\lstinputlisting{../Code/affinebreaker.py}
+	
+\end{document}
