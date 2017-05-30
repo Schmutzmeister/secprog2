@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+
+\parskip 1ex plus 0.4ex minus 0.4ex
+\parindent0ex
+
+\usepackage{enumerate}
+\usepackage{prettyref}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{dirtree}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new]{german}
+\usepackage{fontspec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = blue, %Farbe
+plainpages = false,
+hypertexnames = false,
+citecolor = black,
+xetex] {hyperref}
+\usepackage[style=alphabetic,backend=biber]{biblatex}
+\bibliography{bib}
+
+\title{Praktikumsbericht: Einf\"uhrung in Python}
+\author{Marcus Ganske, 36603\\
+		Lukas Krieg, 53506}
+\date{\today}
+
+\definecolor{light-gray}{gray}{0.95}
+
+\lstset{
+	language=python,
+	breaklines,
+	basicstyle=\ttfamily\small,
+	backgroundcolor=\color{light-gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{olive},
+	commentstyle=\color{gray}\ttfamily,
+	numbers = left,
+	numberstyle = \tiny,
+	numberblanklines=true,
+	stepnumber = 1,
+	tabsize = 4,
+	numbersep=10pt,
+	xleftmargin=10pt,
+}
+
+\begin{document}
+\maketitle
+\vspace{+8cm}{
+}
+\includegraphics[width=15cm]{Hochschule-aalen.pdf}
+
+\newpage
+%Inhaltsverzeichnis
+\renewcommand\contentsname{Inhaltsverzeichnis}
+\tableofcontents
+\newpage
+	
+	\section{Einleitung}
+	\begin{figure}[H]
+			\dirtree{%Baumstruktur
+				.1 Code/.
+				.2 Aufgabe1.c.
+				.2 shellcode.asm.
+				.2 shellcode.bin.
+				.2 shellcode.o.
+				.2 shellcode.py.
+			}
+		\caption{Aufbau des Ordners Code mit allen Dateien}
+\end{document}
