@@ -1,0 +1,7 @@
+*
+!.gitignore
+!images/*
+!vortrag.tex
+!pdf/*
+!*.tex
+!code/*
