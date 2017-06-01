@@ -86,31 +86,50 @@ xetex] {hyperref}
 \newpage
 \section{Aufgabe 1: Codeanalyse \& Reverse Engineering}
 In diesem Kapitel wird auf Aufgabe 1 des Praktikums eingegangen.
-Der Quellcode des C Programms wurde in der Datei unistd.c implementiert.
-\subsection{Codeanalyse}
-Frage : Beschreiben sie die Funktionsweise des Codes
+Es sollte der folgende Code implementiert und analysiert werden.
 \begin{lstlisting}
-wie werden die Parameter der Funktion übergeben?
- Das C-Programm initialisiert ein String Array mit Namen cmd  mit den Strings\\
-"/bin/sh"\\
-"-c"\\
-"ls -l"\\
-und einem 0 terminator.\\
+include <unistd.h>
+int main() {
+	char *cmd[] =  {"/bin/sh","-c","ls-l", (char*)0 };
+	int ret;
+	ret = execve(cmd[0], cmd, NULL);
+	return ret;
+}
+\end{lstlisting}
 
-Danach wird ein integer mit variablennamen ret initialisiert.\\
+Der Quellcode des C Programms wurde in der Datei unistd.c implementiert.
+Diese Datei befindet sich im verzeichnis Code.
 
-Die Funktion execve wird aufgerufen mit den Übergabeparametern
-cmd[0]
-cmd
-NULL
+\subsection{Codeanalyse}
+\textbf{Beschreiben sie die Funktionsweise des Codes}\\
+Das C-Programm initialisiert in Zeile 3 ein String Array mit Namen cmd der Inhalt der Strings ist: \\
+\begin{lstlisting}
+"/bin/sh"
+"-c"
+"ls -l"
+NULL Pointer Value von Typ char.
+\end{lstlisting}
+Danach wird in Zeile 4 ein integer mit Variablennamen "ret" initialisiert.\\
+Die Funktion execve wird aufgerufen mit den Übergabeparametern.
+\begin{lstlisting}
+cmd[0] 	-> "/bin/sh"
+cmd		-> "/bin/sh", "-c", "ls -l", NULL Pointer Value
+NULL	 
+\end{lstlisting}
 
-execve führt programme aus auf die mit einem dateipfad gezeigt wird,
-in diesem Fall handelt es sich um das erste Übergabeparameter cmd[0]
-worin sich der Pfad "/bin/bash" befindet. Es wird eine shell gestartet.
+\textbf{Funktionsaufruf Execve}
 
-Das zweite Übergabeparameter von execve muss ein Array aus Argumentstrings sein
-die an das neue Programm übergeben werden. In diesem Fall
+Die Funktion Execve führt Programme aus, auf welche mit einem Dateipfad gezeigt wird.
+In diesem Fall handelt es sich um das erste Übergabeparameter cmd[0]
+worin sich der Pfad "/bin/bash" befindet. Es wird eine Shell gestartet.
+
+
+Das zweite Übergabeparameter von Execve muss ein Array aus Argumentstrings sein
+die an das neue Programm übergeben werden. In diesem Fall:
+
+\begin{lstlisting}
 cmd = {"/bin/sh","-c","ls -l",(char*)0}
+\end{lstlisting}
 das erste Argument "/bin/sh" gibt den Interpreter  an
 das zweite Argument "-c" bedeutet, dass das folgende command ausgeführt werden soll
 das dritte Argument "ls -l" wird durch die option "-c" ausgeführt
@@ -127,7 +146,7 @@ Deswegen wird hier einfach NULL übergeben.n
 Der Returnwert wird in die integervariable "ret" geschrieben.
 Bei Erfolg gibt es bei  execve allerdings keinen Rückgabewert.
 Bei einem Fehler wird allerdings -1 zurückgegeben.
-\end{lstlisting}
+
 \subsection{Reverse Engineering mit gdb}
 \begin{lstlisting}
 Wie werden die Übergabeparameter an die Funktion
@@ -239,6 +258,9 @@ dies ist der wiedereintrittspunkt in der mainfunktion
 0x0000555555554782 <+114>:	leave  
 0x0000555555554783 <+115>:	ret    
 \end{lstlisting}
+\subsection{to-do}
+BILDER NOCH EINFÜGEN!!!
+FORMATIEREN
 
 
 
