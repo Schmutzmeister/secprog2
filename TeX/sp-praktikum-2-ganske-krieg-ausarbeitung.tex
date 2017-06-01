@@ -60,7 +60,7 @@ xetex] {hyperref}
 \maketitle
 \vspace{+8cm}{
 }
-\includegraphics[width=15cm]{Hochschule-aalen.pdf}
+\includegraphics[width=12cm]{Hochschule-aalen.pdf}
 
 \newpage
 %Inhaltsverzeichnis
@@ -78,5 +78,172 @@ xetex] {hyperref}
 				.2 shellcode.o.
 				.2 shellcode.py.
 			}
+	
 		\caption{Aufbau des Ordners Code mit allen Dateien}
+	\end{figure}	
+
+
+\newpage
+\section{Aufgabe 1: Codeanalyse \& Reverse Engineering}
+In diesem Kapitel wird auf Aufgabe 1 des Praktikums eingegangen.
+Der Quellcode des C Programms wurde in der Datei unistd.c implementiert.
+\subsection{Codeanalyse}
+Frage : Beschreiben sie die Funktionsweise des Codes
+\begin{lstlisting}
+wie werden die Parameter der Funktion übergeben?
+ Das C-Programm initialisiert ein String Array mit Namen cmd  mit den Strings\\
+"/bin/sh"\\
+"-c"\\
+"ls -l"\\
+und einem 0 terminator.\\
+
+Danach wird ein integer mit variablennamen ret initialisiert.\\
+
+Die Funktion execve wird aufgerufen mit den Übergabeparametern
+cmd[0]
+cmd
+NULL
+
+execve führt programme aus auf die mit einem dateipfad gezeigt wird,
+in diesem Fall handelt es sich um das erste Übergabeparameter cmd[0]
+worin sich der Pfad "/bin/bash" befindet. Es wird eine shell gestartet.
+
+Das zweite Übergabeparameter von execve muss ein Array aus Argumentstrings sein
+die an das neue Programm übergeben werden. In diesem Fall
+cmd = {"/bin/sh","-c","ls -l",(char*)0}
+das erste Argument "/bin/sh" gibt den Interpreter  an
+das zweite Argument "-c" bedeutet, dass das folgende command ausgeführt werden soll
+das dritte Argument "ls -l" wird durch die option "-c" ausgeführt
+das vierte Argument (char*) 0 ist ein Nullpointer, der benötigt wird
+um das Ende des Arrays für execve ersichtlich zu machen
+
+Das dritte Übergabeparameter von execve ist "NULL".
+Hier wird ein Stringarray mit zusätzlichen Variablen erwartet, die an
+das neue Programm weitergereicht werden können.
+Dieses Parameter ist genau wie das Zweite nullterminiert.
+Deswegen wird hier einfach NULL übergeben.n
+
+
+Der Returnwert wird in die integervariable "ret" geschrieben.
+Bei Erfolg gibt es bei  execve allerdings keinen Rückgabewert.
+Bei einem Fehler wird allerdings -1 zurückgegeben.
+\end{lstlisting}
+\subsection{Reverse Engineering mit gdb}
+\begin{lstlisting}
+Wie werden die Übergabeparameter an die Funktion
+übergeben 
+Die übergabeparameter werden in die Register 
+rdx,rdi,rsi gespeichert
+
+Bild Register rdx rdi rsi vor call
+
+Im Register rdi befindet sich durch 
+Zeile 
+main+80   mov rdx, rax
+die Adresse 0x555555554814
+des Strings "/bin/sh"
+ 
+
+Zeile main+77 mov rsi, rcx 
+Im Register rsi befindet sich die Adresse
+des ersten Strings unserers Stringarrays cmd.
+Die Adresse lautet 0x7fffffffde20. 
+Diese Adresse liegt im Stack. 
+Der Stack sieht vor dem Aufruf der Funktion folgendermaßen aus.
+0x7fffffffde10:	0x1	0x5555555547dd <__libc_csu_init+77>
+0x7fffffffde20:	0x555555554814	0x55555555481c
+0x7fffffffde30:	0x55555555481f	0x0
+0x7fffffffde40:	0x7fffffffdf30	0xc7f5fc08a85bb400
+0x7fffffffde50:	0x555555554790 <__libc_csu_init>	0x7ffff7a313f1 <__libc_start_main+241>
+
+Die auf  0x7fffffffde20 folgenden Adressen enthalten die benötigten Strings
+0x7fffffffde20: 0x555555554814  -> "/bin/sh"
+0x7fffffffde28: 0x55555555481c	-> "-c"
+0x7fffffffde30: 0x55555555481f	-> "ls -l"
+0x7fffffffde38: 0x0		-> 0
+somit wird über den register rsi die Variable cmd übergeben.
+mov eax, 0x0 
+ein NULL, welches das dritte Übergabeparameter 
+von execve ist.
+
+
+lea rax,[rip+0xe6] 
+Die Adressen der Strings aus dem 
+Teil des Rams in der der Programmcode 
+steht in den register rax geschrieben 
+
+mov QWORD PTR [rbp-0x30],rax
+danach wird die Adresse aus dem rax in 
+den Stack geschrieben
+
+ii) Wie und an welcher Stelle werden die übergebenen Parameter im Speicher abgelegt?
+Dump of assembler code for function main:
+   0x0000555555554710 <+0>:	push   rbp
+   0x0000555555554711 <+1>:	mov    rbp,rsp
+   0x0000555555554714 <+4>:	sub    rsp,0x40
+   0x0000555555554718 <+8>:	mov    rax,QWORD PTR fs:0x28
+   0x0000555555554721 <+17>:	mov    QWORD PTR [rbp-0x8],rax
+   0x0000555555554725 <+21>:	xor    eax,eax
+   0x0000555555554727 <+23>:	lea    rax,[rip+0xe6]        # 0x555555554814
+   0x000055555555472e <+30>:	mov    QWORD PTR [rbp-0x30],rax
+   0x0000555555554732 <+34>:	lea    rax,[rip+0xe3]        # 0x55555555481c
+   0x0000555555554739 <+41>:	mov    QWORD PTR [rbp-0x28],rax
+   0x000055555555473d <+45>:	lea    rax,[rip+0xdb]        # 0x55555555481f
+   0x0000555555554744 <+52>:	mov    QWORD PTR [rbp-0x20],rax
+   0x0000555555554748 <+56>:	mov    QWORD PTR [rbp-0x18],0x0
+   0x0000555555554750 <+64>:	mov    rax,QWORD PTR [rbp-0x30]
+   0x0000555555554754 <+68>:	lea    rcx,[rbp-0x30]
+   0x0000555555554758 <+72>:	mov    edx,0x0
+   0x000055555555475d <+77>:	mov    rsi,rcx
+   0x0000555555554760 <+80>:	mov    rdi,rax
+   0x0000555555554763 <+83>:	call   0x5555555545c8
+   0x0000555555554768 <+88>:	mov    DWORD PTR [rbp-0x34],eax
+   0x000055555555476b <+91>:	mov    eax,DWORD PTR [rbp-0x34]
+   0x000055555555476e <+94>:	mov    rdx,QWORD PTR [rbp-0x8]
+   0x0000555555554772 <+98>:	xor    rdx,QWORD PTR fs:0x28
+   0x000055555555477b <+107>:	je     0x555555554782 <main+114>
+   0x000055555555477d <+109>:	call   0x5555555545c0
+   0x0000555555554782 <+114>:	leave  
+   0x0000555555554783 <+115>:	ret  
+
++23 Adresse von "/bin/sh" wird aus Programmcode in Register rax geschrieben 
++30 Adresse von "/bin/sh" wird aus rax auf den stack geschrieben
++34 Adresse von "-c" wird aus Programmcode in rax geschrieben
++41 Adresse von "-c" wird aus Programmcode in rax geschrieben
++45 Adresse von "ls -l" wird aus Programmcode in rax geschrieben
++52 Adresse von "ls -l" wird aus Register rax auf den Stack geschrieben
++56 Adresse xx auf dem Stack wird mit 0 beschrieben.
+Im Stack werden die Stringadressen als QWORD Pointer gespeichert, d.h 8byte pointer =64bit
+
+Danach werden die Parameter wie oben beschrieben aus dem Stack wieder in Register geschrieben 
+um nach dem Funktionsaufruf verwendet werden zu können.
+
+
+iii)
+Im stack befindet sich die Rücksprungadresse auf die mainfunktion
+(gdb) x/a $rsp
+0x7fffffffde08:	0x555555554768 <main+88>
+
+0x555555554768
+ist die adresse die der rip nach ausführen der funktion execve wieder aufnehmen muss
+
+dies ist der wiedereintrittspunkt in der mainfunktion
+
+0x0000555555554763 <+83>:	call   0x5555555545c8
+0x0000555555554768 <+88>:	mov    DWORD PTR [rbp-0x34],eax
+0x000055555555476b <+91>:	mov    eax,DWORD PTR [rbp-0x34]
+0x000055555555476e <+94>:	mov    rdx,QWORD PTR [rbp-0x8]
+0x0000555555554772 <+98>:	xor    rdx,QWORD PTR fs:0x28
+0x000055555555477b <+107>:	je     0x555555554782 <main+114>
+0x000055555555477d <+109>:	call   0x5555555545c0
+0x0000555555554782 <+114>:	leave  
+0x0000555555554783 <+115>:	ret    
+\end{lstlisting}
+
+
+
+
+
 \end{document}
+
+
