@@ -32,7 +32,7 @@ xetex] {hyperref}
 \usepackage[style=alphabetic,backend=biber]{biblatex}
 \bibliography{bib}
 
-\title{Praktikumsbericht: Einf\"uhrung in Python}
+\title{Praktikumsbericht: Buffer Overflow}
 \author{Marcus Ganske, 36603\\
 		Lukas Krieg, 53506}
 \date{\today}
@@ -84,6 +84,28 @@ xetex] {hyperref}
 
 
 \newpage
+<<<<<<< HEAD
+	\section{Aufgabe 1: Codeanalyse \& Reverse Engineering}
+		In diesem Kapitel wird auf Aufgabe 1 des Praktikums eingegangen.
+		Es sollte der folgende Code implementiert und analysiert werden.
+		\lstinputlisting{../code/unistd.c}
+
+		Der Quellcode des C Programms wurde in der Datei unistd.c implementiert.
+		Diese Datei befindet sich im verzeichnis Code.
+
+		\subsection{Codeanalyse}
+		\textbf{Beschreiben Sie die Funktionsweise des Codes}\\
+			Das C-Programm initialisiert in Zeile 5 ein Chararray mit Namen cmd; der Inhalt der Strings ist: \\
+			\begin{lstlisting}
+"/bin/sh"
+"-c"
+"ls -l"
+NULL Pointer Value vom Typ char.
+			\end{lstlisting}
+			Danach wird in Zeile 6 ein Integer mit Variablennamen "ret" initialisiert.\\
+			Die Funktion execve wird aufgerufen mit den \"Ubergabeparametern
+			\begin{lstlisting}
+=======
 \section{Aufgabe 1: Codeanalyse \& Reverse Engineering}
 In diesem Kapitel wird auf Aufgabe 1 des Praktikums eingegangen.
 Es sollte der folgende Code implementiert und analysiert werden.
@@ -113,20 +135,64 @@ Der Inhalt der Strings ist: \\
 Danach wird in Zeile 4 ein integer mit Variablennamen "ret" definiert.\\
 Die Funktion execve wird aufgerufen mit den Übergabeparametern.
 \begin{lstlisting}
+>>>>>>> 716d1612e53e9b514228f3daf373822dd1ea1c53
 cmd[0] 	-> "/bin/sh"
 cmd		-> "/bin/sh", "-c", "ls -l", NULL Pointer Value
-NULL	 
-\end{lstlisting}
+NULL
+			\end{lstlisting}
 
-\textbf{Funktionsaufruf Execve}
+			\paragraph{Funktionsaufruf execve}
+			~\\
+			Die Funktion Execve f\"uhrt Programme aus, auf welche mit einem Dateipfad gezeigt wird.\\
+			In diesem Fall handelt es sich um den ersten \"Ubergabeparameter cmd[0]
+			worin sich der Pfad "/bin/sh" befindet. Es wird eine Shell gestartet.
 
+<<<<<<< HEAD
+			Der zweite \"Ubergabeparameter von execve muss ein Array aus Argumentstrings sein, die an das neue Programm \"ubergeben werden. In diesem Fall:
+
+			\begin{lstlisting}
+cmd = {"/bin/sh", "-c", "ls -l", (char*)0}
+			\end{lstlisting}
+			\begin{itemize}
+			\item das erste Argument "/bin/sh" gibt den Interpreter an\\
+			\item das zweite Argument "-c" bedeutet, dass der folgende Befehl ausgef\"uhrt werden soll\\
+			\item das dritte Argument "ls -l" wird durch die Option "-c" ausgef\"uhrt\\
+			\item das vierte Argument (char*) 0 ist ein Nullpointer, der ben\"otigt wird um das Ende des Arrays f\"ur execve ersichtlich zu machen
+			\end{itemize}
+			~\\[0.3cm]
+=======
 Die Funktion execve() führt Programme aus, auf welche mit einem Dateipfad gezeigt wird.
 In diesem Fall handelt es sich um das erste Übergabeparameter cmd[0]
 worin sich der Pfad "/bin/sh" befindet. Es wird eine Shell gestartet.
+>>>>>>> 716d1612e53e9b514228f3daf373822dd1ea1c53
 
-Das zweite Übergabeparameter von Execve muss ein Array aus Argumentstrings sein
-die an das neue Programm übergeben werden. In diesem Fall:
+			Der dritte \"Ubergabeparameter von execve ist "NULL". Hier wird ein Chararray mit zus\"atzlichen Variablen erwartet, die an
+das neue Programm weitergereicht werden k\"onnen. Dieser Parameter ist genau wie der zweite nullterminiert. Deswegen wird hier einfach NULL \"ubergeben.\\[0.3cm]
 
+<<<<<<< HEAD
+
+			Der Returnwert wird in die Integervariable "ret" geschrieben. Bei Erfolg gibt es bei execve keinen R\"uckgabewert, im Fehlerfall wird -1 zur\"uckgegeben.
+
+		\subsection{Reverse Engineering mit gdb}
+
+			\paragraph{Wie werden die \"Ubergabeparameter an die Funktion \"ubergeben?}
+			Die \"Ubergabeparameter werden in die Register rdx,rdi,rsi gespeichert.
+			\\~\\
+
+
+			\begin{figure}[h!]
+				\includegraphics[width = 20cm]{../images/Bufferoverflow_Aufgabe1_Adressen_auf_string_direkt_vor_call.png}
+				\caption{Register rdx rdi rsi vor call}
+			\end{figure}
+
+			Im Register rdi befindet sich durch Zeile 
+			\begin{lstlisting}
+main+80   mov rdx, rax
+
+die Adresse 0x555555554814
+des Strings "/bin/sh"
+ 
+=======
 \begin{lstlisting}
 cmd = {"/bin/sh","-c","ls -l",(char*)0}
 \end{lstlisting}
@@ -172,6 +238,7 @@ die Adresse 0x555555554814 in der sich der String "/bin/sh" befindet. (siehe Abb
 0x000055555555475d <+77>:   mov rsi, rcx
 \end{lstlisting} 
 
+>>>>>>> 716d1612e53e9b514228f3daf373822dd1ea1c53
 
 Im Register rsi befindet sich die Adresse
 des ersten Strings unserers Stringarrays cmd.
@@ -179,6 +246,17 @@ Die Adresse lautet 0x7fffffffde20.
 Diese Adresse liegt im Stack. 
 Der Stack sieht vor dem Aufruf der Funktion folgendermaßen aus.
 
+<<<<<<< HEAD
+Die auf  0x7fffffffde20 folgenden Adressen enthalten die ben\"otigten Strings
+0x7fffffffde20: 0x555555554814  -> "/bin/sh"
+0x7fffffffde28: 0x55555555481c	-> "-c"
+0x7fffffffde30: 0x55555555481f	-> "ls -l"
+0x7fffffffde38: 0x0		-> 0
+somit wird \"uber den register rsi die Variable cmd \"ubergeben.
+mov eax, 0x0 
+ein NULL, welches das dritte \"ubergabeparameter 
+von execve ist.
+=======
 \begin{figure}[h!]
 	\includegraphics[width=15cm]{../images/Bufferoverflow_Aufgabe1a_StackVorCallExecve.jpg}
 	\caption{Aufgabe 1a Inhalt Stack vor Aufruf execve()}
@@ -205,12 +283,17 @@ Somit wird über den Register rsi das Stringarrays cmd übergeben.
 Ist ein NULL, welches das dritte Übergabeparameter von execve ist.
 
 
+>>>>>>> 716d1612e53e9b514228f3daf373822dd1ea1c53
 
 
 \subsubsection{Wie und an welcher Stelle werden die übergebenen Parameter im Speicher abgelegt?}
 
 Zunächst werden Pointer für alle Strings auf den Stack geschrieben um dann vor Funktionsaufruf in den entsprechenden Registern gespeichert zu werden.
 
+<<<<<<< HEAD
+ii) Wie und an welcher Stelle werden die \"ubergebenen Parameter im Speicher abgelegt?
+=======
+>>>>>>> 716d1612e53e9b514228f3daf373822dd1ea1c53
 Dump of assembler code for function main:
 \begin{lstlisting}
    0x0000555555554710 <+0>:	push rbp
@@ -258,6 +341,14 @@ Siehe Abbildung 3 für den Inhalt des Stacks, dieser reicht von der Adresse des 
 
 Im Stack werden die Stringadressen als QWORD Pointer gespeichert, d.h 8byte pointer =64bit
 
+<<<<<<< HEAD
+Danach werden die Parameter wie oben beschrieben aus dem Stack wieder in Register geschrieben 
+um nach dem Funktionsaufruf verwendet werden zu k\"onnen.
+
+
+iii)
+Im stack befindet sich die R\"ucksprungadresse auf die mainfunktion
+=======
 
 
 \newpage
@@ -270,10 +361,27 @@ Im Stack befindet sich die Rücksprungadresse auf die mainfunktion
 \end{figure}
 
 \begin{lstlisting}
+>>>>>>> 716d1612e53e9b514228f3daf373822dd1ea1c53
 (gdb) x/a $rsp
 0x7fffffffde08:	0x555555554768 <main+88>
 \end{lstlisting}
 0x555555554768
+<<<<<<< HEAD
+ist die adresse die der rip nach ausf\"uhren der funktion execve wieder aufnehmen muss
+
+dies ist der wiedereintrittspunkt in der mainfunktion
+
+0x0000555555554763 <+83>:	call   0x5555555545c8
+0x0000555555554768 <+88>:	mov    DWORD PTR [rbp-0x34],eax
+0x000055555555476b <+91>:	mov    eax,DWORD PTR [rbp-0x34]
+0x000055555555476e <+94>:	mov    rdx,QWORD PTR [rbp-0x8]
+0x0000555555554772 <+98>:	xor    rdx,QWORD PTR fs:0x28
+0x000055555555477b <+107>:	je     0x555555554782 <main+114>
+0x000055555555477d <+109>:	call   0x5555555545c0
+0x0000555555554782 <+114>:	leave  
+0x0000555555554783 <+115>:	ret    
+%\end{lstlisting}
+=======
 ist die Adresse die der rip nach ausführen der funktion execve wieder aufnehmen muss,
 dies ist der nächste Befehl nach Aufruf der Funktion execve() in der Mainfunktion
 \begin{lstlisting}
@@ -291,7 +399,27 @@ dies ist der nächste Befehl nach Aufruf der Funktion execve() in der Mainfunkti
 
 
 
+>>>>>>> 716d1612e53e9b514228f3daf373822dd1ea1c53
 
+	\section{Ein interessanter Shellcode}
+		\subsection{Analyse und Beschreibung des Shellcodes}
+			\lstinputlisting[linerange={1}]{../code/shellcode.asm}
+			In dieser Zeile wird bestimmt, dass mit einer 64-Bit Architektur gearbeitet wird.
+
+			\lstinputlisting[linerange={3-4}]{../code/shellcode.asm}		
+			In diesen Zeilen werden Assembler\"ubliche Vorbereituungen getroffen.
+			
+			\lstinputlisting[linerange={6-13}]{../code/shellcode.asm}
+			Hier beginnt der eigentliche Programmcode. Zun\"achst wird das rcx Register mit sich selbst XOR-verknüpft, um es auf 0 zu setzen. Anschlie{\ss}end wird es auf den Stack gelegt. Danach wird der Wert 0x68732f6e69622fff in rcx gelegt, der die hexadezimale Codierung von /bin/sh ist.\\
+			~\\
+			Anschlie{\ss}end wird mit Inhalt von rcx um ein Rechtsshift um 8 vollzogen, hierbei werden implizit alle leeren Bits auf 0 gesetzt.Hierdurch wird der Inhalt in einen nullterminierten C-String umgewandelt. Abschlie{\ss}end wird das rcx Register auf den Stack gelegt und ein Zeiger auf den String im rdi Register abgelegt.
+			
+			\lstinputlisting[linerange={15-18}]{../code/shellcode.asm}
+			In diesem Abschnitt wird zun\"achst wieder der Wert 0 auf den Stack gelegt. Zus\"atzlich wird 0x632d, was die hexadezimale Codierung von -c ist, auf den Stack gelegt. Am Ende wird ein Zeiger auf diesen im Register rbx gespeichert.
+			
+			\lstinputlisting[linerange={20-22}]{../code/shellcode.asm}
+			Hier wird wieder zuerst das rcx Register durch xor auf 0 gesetzt und anschlie{\ss}end auf den Stack gelegt. Anschlie{\ss}end erfolgt ein Sprung zur Commandmarke, die in Zeile 38 zu finden ist.
+			
 
 \end{document}
 
