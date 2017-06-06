@@ -120,10 +120,9 @@ NULL
 
 \textbf{Funktionsaufruf Execve}
 
-Die Funktion Execve führt Programme aus, auf welche mit einem Dateipfad gezeigt wird.
+Die Funktion execve() führt Programme aus, auf welche mit einem Dateipfad gezeigt wird.
 In diesem Fall handelt es sich um das erste Übergabeparameter cmd[0]
-worin sich der Pfad "/bin/bash" befindet. Es wird eine Shell gestartet.
-
+worin sich der Pfad "/bin/sh" befindet. Es wird eine Shell gestartet.
 
 Das zweite Übergabeparameter von Execve muss ein Array aus Argumentstrings sein
 die an das neue Programm übergeben werden. In diesem Fall:
