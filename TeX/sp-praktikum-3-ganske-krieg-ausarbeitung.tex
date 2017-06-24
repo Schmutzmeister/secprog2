@@ -1,0 +1,153 @@
+\documentclass[12pt]{article}
+
+\parskip 1ex plus 0.4ex minus 0.4ex
+\parindent0ex
+
+\usepackage{enumerate}
+\usepackage{prettyref}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{dirtree}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new]{german}
+\usepackage{fontspec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = blue, %Farbe
+plainpages = false,
+hypertexnames = false,
+citecolor = black,
+xetex] {hyperref}
+\usepackage[style=alphabetic,backend=biber]{biblatex}
+\bibliography{bib}
+
+\title{Praktikumsbericht: Secure C Coding}
+\author{Marcus Ganske, 36603\\
+		Lukas Krieg, 53506}
+\date{\today}
+
+\definecolor{light-gray}{gray}{0.95}
+
+\lstset{
+	language=c,
+	breaklines,
+	basicstyle=\ttfamily\small,
+	backgroundcolor=\color{light-gray},
+	keywordstyle=\color{blue},
+	stringstyle=\color{olive},
+	commentstyle=\color{gray}\ttfamily,
+	numbers = left,
+	numberstyle = \tiny,
+	numberblanklines=true,
+	stepnumber = 1,
+	tabsize = 4,
+	numbersep=10pt,
+	xleftmargin=10pt,
+}
+
+\begin{document}
+\maketitle
+\vspace{+8cm}{
+}
+\includegraphics[width=12cm]{Hochschule-aalen.pdf}
+
+\newpage
+%Inhaltsverzeichnis
+\renewcommand\contentsname{Inhaltsverzeichnis}
+\tableofcontents
+\newpage
+%Den Code in das CMAKE Projekt von Karg einfügen und in Code Ordner reinlegen
+
+	
+	\section{Einleitung}
+    Dieser Bericht beschreibt das dritte Praktikum der Vorlesung Sicheres Programmieren. Die Richtlinien EXP37-C, INT30-C, MEM31-C und INT33-C der CERT Secure Coding Guidelines sollen untersucht untersucht werden. Außerdem sollen Beispielimplementationen für das verstoßen und befolgen der Richtlinen erstellt werden. Desweiteren sollen die Auswirkungen bei nichtbeachtung der Richtlinen beschrieben werden.
+	\begin{figure}[H]
+			\dirtree{%Baumstruktur
+				.1 Code/.
+				.2 CERT.c.
+				.2 shellcode.asm.
+				.2 shellcode.bin.
+				.2 shellcode.o.
+				.2 shellcode.py.
+			}
+	
+		\caption{Aufbau des Ordners Code mit allen Dateien}
+	\end{figure}	
+
+
+\section{EXP37-C}
+\subsection{Beschreibung der Richtlinie}
+Funktionen sollen nicht mit einer falschen Anzahl von Parametern oder mit Parametern eines falschen Typs aufgerufen werden.
+Der C Standard beschreibt fünf verschiedene Situationen, in denen unvorhersehbares Verhalten auftreten kann. 
+\begin{itemize}
+    \item Ein Zeiger wird benutzt um eine Funktion aufzurufen, deren Typ nicht mit dem referenzierten Typ kompatibel ist.
+    \item Für einen Aufruf eine Funktion ohne Prototyp im scope, Die Anzahl der Argumente stimmt nicht mit der Anzahl der Parameter überein.
+    \item Wenn eine Funktion ohne Prototyp im scope gerufen wird, aber es einen Prototyp gibt, können die Typen der Argumente des Prototypes vom Aufruf abweichen und inkompatibel sein.
+    \item Wenn eine Funktion ohne Prototyp im scope gerufen wird und es keinen Prototyp gibt, können die Typen der Parameter des Prototypes vom Aufruf abweichen und inkompatibel sein.
+    \item Eine Funktion ist mit einem Typ definiert der nicht mit dem der Aufgerufenen Funktion übereinstimmt.
+    A function is defined with a type that is not compatible with the type of the expression pointed to by the expression that denotes the called function
+\end{itemize}
+
+Wird eine Funktion in Ansi C benutzt die nicht deklariert wurde und von der kein Prototyp sichtbar ist, dann wird der Compiler die beim Funktionsaufruf benutzten Argumente als korrekten Aufruf der Funktion annehmen. Auch wenn Funktionen ordentlich deklariert sind und mit der falschen Anzahl oder falschem Typ von Argumenten aufgerufen werden, wird der Compiler bestenfalls nur Warnmeldungen ausgeben aber den Code trotzdem kompilieren.
+
+
+
+\newpage
+\subsection{Codebeispiele}
+\subsubsection{nichtkonformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/exp37-noncompliant.c}
+\subsubsection{konformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/exp37-compliant.c}
+
+
+\subsection{Auswirkung bei Nichtbeachtung}
+Das Verhalten nach einem Funktionsaufruf mit falschen Argumenten ist nicht definiert. Die Funktion des Programms kann eingeschränkt werden, beispielsweise können Berechnungen falsche Ergebnisse liefern. Im schlimmsten Fall können Sicherheitslücken auftreten. In den Shadow Utilities wurde eine Sicherheitslücke (VU\#312692) gefunden. Dabei hat bei der Utility useradd die Funktion Open() nicht die erwarteten Argumente übergeben bekommen. Dies führte dazu, dass zufällige Berechtigungen für die neue Mailbox gesetzt wurden.
+
+
+\section{INT30-C}
+\subsection{Beschreibung der Richtlinie}
+\subsection{Codebeispiele}
+\subsubsection{nichtkonformer Code}
+\subsubsection{konformer Code}
+
+\subsection{Auswirkung bei Nichtbeachtung}
+
+
+
+
+\section{MEM31-C}
+\subsection{Beschreibung der Richtlinie}
+Allokierter Speicher sollte nachdem er nichtmehr benötigt wird freigegebene werden.
+\subsection{Codebeispiele}
+\subsubsection{nichtkonformer Code}
+\subsubsection{konformer Code}
+
+\subsection{Auswirkung bei Nichtbeachtung}
+Memoryleaks entstehen, der Hauptspeicher.
+
+
+
+\section{INT33-C}
+\subsection{Beschreibung der Richtlinie}
+\subsection{Codebeispiele}
+\subsubsection{nichtkonformer Code}
+\subsubsection{konformer Code}
+
+\subsection{Auswirkung bei Nichtbeachtung}
+
+
+
+\end{document}
+
+
