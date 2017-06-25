@@ -85,8 +85,8 @@ xetex] {hyperref}
 		\caption{Aufbau des Ordners Code mit allen Dateien}
 	\end{figure}	
 
-
-\section{EXP37-C}
+\newpage
+\section{EXP37-C: Call functions with the correct number and type of arguments}
 \subsection{Beschreibung der Richtlinie}
 Funktionen sollen nicht mit einer falschen Anzahl von Parametern oder mit Parametern eines falschen Typs aufgerufen werden.
 Der C Standard beschreibt fünf verschiedene Situationen, in denen unvorhersehbares Verhalten auftreten kann. 
@@ -102,9 +102,8 @@ Der C Standard beschreibt fünf verschiedene Situationen, in denen unvorhersehba
 Wird eine Funktion in Ansi C benutzt die nicht deklariert wurde und von der kein Prototyp sichtbar ist, dann wird der Compiler die beim Funktionsaufruf benutzten Argumente als korrekten Aufruf der Funktion annehmen. Auch wenn Funktionen ordentlich deklariert sind und mit der falschen Anzahl oder falschem Typ von Argumenten aufgerufen werden, wird der Compiler bestenfalls nur Warnmeldungen ausgeben aber den Code trotzdem kompilieren.
 
 
-
-\newpage
 \subsection{Codebeispiele}
+Erklärung und weitere Beispiele Einfügen
 \subsubsection{nichtkonformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/exp37-noncompliant.c}
 \subsubsection{konformer Code}
@@ -114,35 +113,72 @@ Wird eine Funktion in Ansi C benutzt die nicht deklariert wurde und von der kein
 \subsection{Auswirkung bei Nichtbeachtung}
 Das Verhalten nach einem Funktionsaufruf mit falschen Argumenten ist nicht definiert. Die Funktion des Programms kann eingeschränkt werden, beispielsweise können Berechnungen falsche Ergebnisse liefern. Im schlimmsten Fall können Sicherheitslücken auftreten. In den Shadow Utilities wurde eine Sicherheitslücke (VU\#312692) gefunden. Dabei hat bei der Utility useradd die Funktion Open() nicht die erwarteten Argumente übergeben bekommen. Dies führte dazu, dass zufällige Berechtigungen für die neue Mailbox gesetzt wurden.
 
-
-\section{INT30-C}
+\newpage
+\section{INT30-C: Ensure that unsigned integer operations do not wrap}
 \subsection{Beschreibung der Richtlinie}
+Das Wort wrap ist nicht zu verwechseln mit dem over bzw. underflow einere Integervariable. Bei einem wrap eines unsigned Integers kann die Vatriable ihren Wert nach einer Operation nichtmehr darstellen. 
+
+Ist die Obergrenze der Variable erreicht, wird sie bei einer weiteren Erhöhung ihres Wertes der neue Wert (neuer Wert mod Obergrenze)sein.\\
+Addition In Binärdarstellung(32bit unsigned Integer):\\
+11111111111111111111111111111111  // 4.294.967.295\\
++\\
+00000000000000000000000000000001  // +1\\
+=\\
+00000000000000000000000000000000  // 0\\
+Die Addition hat einen Übertrag des niederwertigsten Bits weitergetragen bis zum höchstwertigsten Bit. Alle Bits sind nun 0 und der Übertrag ist verlorengegangen, da keine weiteren bits vorhanden waren. In diesem Beispiel wurde ein wrap mit Addition herbeigeführt. \\
+In diesem Beispiel wird ein wrap durch Subtraktion herbeigeführt:\\
+00000000000000000000000000000000 // 0\\
+-\\
+00000000000000000000000000000001 // -1\\
+=\\
+11111111111111111111111111111111 // 4.294.967.295\\
+
+Die Wert -1 kann von einem unsigned Integer nicht dargestellt werden. Das Ergebniss ist daher (-1 mod 4.294.967.296) = 4.294.967.295
+
+Operatoren, die wraps herbeiführen können sind:\\
+\begin{itemize}
+    \item + Addition
+    \item - Subbtraktion
+    \item * Multiplikation
+    \item << Bitshift
+\end{itemize}
 \subsection{Codebeispiele}
+Erklärung und weitere Beispiele Einfügen
 \subsubsection{nichtkonformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int30-noncompliant.c}
+In diesem beispiel werden zwei unsigned Integers addiert ohne zu prüfen ob durch die Addition ein wrap herbeigeführt wird.
 \subsubsection{konformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int30-compliant.c}
+In diesem Beispiel wird die notwendige Prüfung durchgeführt bevor der Addition erfolgt. In Zeile 6 wird geprüft ob die Maximalgröße eines unsigned Integers minus ui\_a kleiner ist als ui\_b. Ist ui\_b größer als die Differenz von UINT\_MAX und ui\_a dann würde ein Wrap erfolgen. Stadtessen wird hier ein Fehler geworfen.
 
 \subsection{Auswirkung bei Nichtbeachtung}
+Unsigned Integer wraps können zu Bufferoverflows und der Ausführung von beliebigem  Code führen.
+Beispielsweise führte ein unsigned Integer wrapping im Linux Kernel zu einem Bufferoverflow (Linux Kernel vmsplice exploit).
 
-
-
-
-\section{MEM31-C}
+\newpage
+\section{MEM31-C: Free dynamically allocated memory when no longer needed}
 \subsection{Beschreibung der Richtlinie}
 Allokierter Speicher sollte nachdem er nichtmehr benötigt wird freigegebene werden.
 \subsection{Codebeispiele}
+Erklärung und weitere Beispiele Einfügen
 \subsubsection{nichtkonformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/mem31-noncompliant.c}
 \subsubsection{konformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/mem31-compliant.c}
 
 \subsection{Auswirkung bei Nichtbeachtung}
 Memoryleaks entstehen, der Hauptspeicher.
 
 
-
-\section{INT33-C}
+\newpage
+\section{INT33-C: Ensure that devision and remainder operations so not in result in devide-by-zero errors}
 \subsection{Beschreibung der Richtlinie}
 \subsection{Codebeispiele}
+Erklärung und weitere Beispiele Einfügen
 \subsubsection{nichtkonformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-noncompliant.c}
 \subsubsection{konformer Code}
+\lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-compliant.c}
 
 \subsection{Auswirkung bei Nichtbeachtung}
 
