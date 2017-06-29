@@ -173,16 +173,29 @@ Memoryleaks entstehen, der Hauptspeicher.
 \newpage
 \section{INT33-C: Ensure that devision and remainder operations so not in result in devide-by-zero errors}
 \subsection{Beschreibung der Richtlinie}
+
+Divisions- und Restoperationen können in C zu undefiniertem Verhalten führen.
+Dies tritt genau dann auf wenn der zweite Operand des Divisionsoperanden "/" oder des Modulooperandens "\%" eine null ist.
+Um diese Art von Situation zu vermeiden sollte sichergestellt werden, dass der zweite Operand nie null ist.
+
+
+Weiterhin kann bei unsigned Integers auch eine Overflow auftreten wenn der erste Operand den Minimalwert besitzt und der zweite Operand -1 ist. Das kommt daher, dass bei signed Integers der negative Wertebereicht größer ist als der positive. Da die null im positiven Wertebereicht liegt, reicht ein 16bit signed Integer von 127 bis -128.
+
+
 \subsection{Codebeispiele}
-Erklärung und weitere Beispiele Einfügen
 \subsubsection{nichtkonformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-noncompliant.c}
+
+In diesem Codebeispiel wird in Zeile 5 nur geprüft ob ein Overflow entstehen würde. Eine Division durch null kann weiterhin durchgeführt werden wenn als Argument s_b eine null übergeben wird.
+
+ 
 \subsubsection{konformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-compliant.c}
 
+Bei diesem Beispiel wird in Zeile 5 geprüft ob das Argument s_b eine null beinhaltet. Ist dies der Fall dann wird auf den Fehler reagiert.
+
 \subsection{Auswirkung bei Nichtbeachtung}
-
-
+Deivide by Zero kann zu DoS und abnormalen Programmabstürzen  führen.
 
 \end{document}
 
