@@ -186,16 +186,16 @@ Weiterhin kann bei unsigned Integers auch eine Overflow auftreten wenn der erste
 \subsubsection{nichtkonformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-noncompliant.c}
 
-In diesem Codebeispiel wird in Zeile 5 nur geprüft ob ein Overflow entstehen würde. Eine Division durch null kann weiterhin durchgeführt werden wenn als Argument s_b eine null übergeben wird.
+In diesem Codebeispiel wird in Zeile 5 nur geprüft ob ein Overflow entstehen würde. Eine Division durch null kann weiterhin durchgeführt werden wenn als Argument s\_b eine null übergeben wird.
 
  
 \subsubsection{konformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-compliant.c}
 
-Bei diesem Beispiel wird in Zeile 5 geprüft ob das Argument s_b eine null beinhaltet. Ist dies der Fall dann wird auf den Fehler reagiert.
+Bei diesem Beispiel wird in Zeile 5 geprüft ob das Argument s\_b eine null beinhaltet. Ist dies der Fall dann wird auf den Fehler reagiert.
 
 \subsection{Auswirkung bei Nichtbeachtung}
-Deivide by Zero kann zu DoS und abnormalen Programmabstürzen  führen.
+Divide by Zero kann zu DoS und abnormalen Programmabstürzen  führen.
 
 \end{document}
 
