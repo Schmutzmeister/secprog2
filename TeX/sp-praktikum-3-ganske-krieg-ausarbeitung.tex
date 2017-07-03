@@ -121,9 +121,9 @@ Wird eine Funktion in Ansi C benutzt, die nicht deklariert wurde und von der kei
 	In diesem Beispiel soll die Funktion strchr() aus der C-Standardbibliothek \"uber einen Funktionszeiger fp, dessen Prototyp mit falschen Datentypen deklariert wurde, aufgerufen werden.
 
 \subsubsection{nichtkonformer Code}
-\lstinputlisting{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/exp37-2-noncompliant.c}
+\lstinputlisting[linerange={1-20}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/exp37-2-noncompliant.c}
 \subsubsection{konformer Code}
-\lstinputlisting{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/exp37-2-noncompliant.c}
+\lstinputlisting[linerange={1-20}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/exp37-2-compliant.c}
 
 \subsection{Auswirkung bei Nichtbeachtung}
 Das Verhalten nach einem Funktionsaufruf mit falschen Argumenten ist nicht definiert. Die Funktion des Programms kann eingeschr\"ankt werden, beispielsweise k\"onnen Berechnungen falsche Ergebni{\ss}e liefern. Im schlimmsten Fall k\"onnen Sicherheitsl\"ucken auftreten. In den Shadow Utilities wurde eine Sicherheitsl\"ucke (VU\#312692) gefunden. Dabei hat bei der Utility useradd die Funktion Open() nicht die erwarteten Argumente \"ubergeben bekommen. Dies f\"uhrte dazu, da{\ss} zuf\"allige Berechtigungen f\"ur die neue Mailbox gesetzt wurden.
@@ -188,28 +188,40 @@ In diesem Beispiel wird das vom Aufruf von malloc() allokierte Objekt nicht befr
 \subsubsection{nichtkonformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/mem31-noncompliant.c}
 ~\\
+In der konformen L\"osung wird der Zeiger mit einem Aufruf von free() de\-allokalisiert.
 \subsubsection{konformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/mem31-compliant.c}
 
 \subsection{Auswirkung bei Nichtbeachtung}
-Memoryleaks entstehen, der Hauptspeicher.
+Wird Speicher nicht freigegeben, kann es zur Ersch\"opfung der Speicherressourcen kommen, was zu einer DoS-Attacke f\"uhren kann.
 
 
 \newpage
 \section{INT33-C: Ensure that devision and remainder operations so not in result in devide-by-zero errors}
 \subsection{Beschreibung der Richtlinie}
+Bei Division und Restoperationen sollte sichergestellt werden, dass nicht durch 0 geteilt wird.
 \subsection{Codebeispiele}
-Erkl\"arung und weitere Beispiele Einf\"ugen
+Das Ergebnis des / Operators ist der Quotient der Division des ersten Operanden durch den zweiten. Teilungsoperationen sind anf\"allig f\"ur divide-by-zero Fehler.\\
+Ein \"Uberlauf kann auch bei der vorzeichenbehafteten Teilung im Zweierkomplement entstehen, wenn der Dividend gleich dem minimalen Wert des vorzeichenbehafteten Ganzzahltyps und der Divisor -1 ist.
 \subsubsection{nichtkonformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-noncompliant.c}
 
 In diesem Codebeispiel wird in Zeile 5 nur geprüft ob ein Overflow entstehen würde. Eine Division durch null kann weiterhin durchgeführt werden wenn als Argument s\_b eine null übergeben wird.
-
+\newpage
 \subsubsection{konformer Code}
 \lstinputlisting[linerange={5-150}]{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-compliant.c}
 
 Bei diesem Beispiel wird in Zeile 5 geprüft ob das Argument s\_b eine Null beinhaltet. Ist dies der Fall dann wird auf den Fehler reagiert.
 
+Der \% Operator stellt den Rest zur Verf\"ugung, wenn zwei Operanden des Typs Integer geteilt werden.
+\subsubsection{nichtkonformer Code}
+Dieser nichtkonforme Code verhindert konform zu INT32-C einen vorzeichenbehafteten Ganzzahl\"uberlauf, jedoch wird der divide-by-zero Fehler w\"ahrend der Modulodivision der Operanden \(s_a\) und \(s_b\) nicht verhindert.
+
+\lstinputlisting{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-2-noncompliant.c}
+
+\subsubsection{konformer Code}
+Die konforme L\"osung pr\"uft, ob der Modulooperator garantiert, dass keine M\"oglichkeit eines divide-by-zero Fehlers oder eines \"Uberlaufs besteht.
+\lstinputlisting{../code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-2-compliant.c}
 \subsection{Auswirkung bei Nichtbeachtung}
 Divide by Zero kann zu DoS und abnormalen Programmabstürzen  führen.
 
