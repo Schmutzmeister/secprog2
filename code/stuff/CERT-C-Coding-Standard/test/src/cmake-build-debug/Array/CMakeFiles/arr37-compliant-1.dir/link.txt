@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/arr37-compliant-1.dir/arr37-compliant-1.c.o  -o ../bin/arr37-compliant-1 

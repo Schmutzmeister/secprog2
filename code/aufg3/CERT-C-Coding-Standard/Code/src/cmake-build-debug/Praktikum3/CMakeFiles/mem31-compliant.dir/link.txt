@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/mem31-compliant.dir/mem31-compliant.c.o  -o ../bin/mem31-compliant 

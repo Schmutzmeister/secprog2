@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/dcl30-compliant.dir/dcl30-compliant.c.o  -o ../bin/dcl30-compliant 

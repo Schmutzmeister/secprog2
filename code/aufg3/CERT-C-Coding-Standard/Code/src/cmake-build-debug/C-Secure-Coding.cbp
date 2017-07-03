@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="C-Secure-Coding"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Praktikum3\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-2-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-2-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-2-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-2-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-2-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-2-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-2-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-2-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-2-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-2-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-2-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-2-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-2-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-2-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-2-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-2-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-2-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-2-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-2-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-2-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-2-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-2-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-2-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-2-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem31-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/mem31-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 mem31-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem31-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/mem31-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 mem31-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem31-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/mem31-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 mem31-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem31-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/mem31-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 mem31-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-2-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-2-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-2-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-2-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-2-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-2-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int33-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int33-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int33-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exp37-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/exp37-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 exp37-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-2-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-2-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-2-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-2-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-2-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-2-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int30-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin/int30-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 int30-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/cmake-build-debug/Praktikum3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/exp37-2-compliant.c">
+			<Option target="exp37-2-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/exp37-2-noncompliant.c">
+			<Option target="exp37-2-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/exp37-compliant.c">
+			<Option target="exp37-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/exp37-noncompliant.c">
+			<Option target="exp37-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int30-2-compliant.c">
+			<Option target="int30-2-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int30-2-noncompliant.c">
+			<Option target="int30-2-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int30-compliant.c">
+			<Option target="int30-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int30-noncompliant.c">
+			<Option target="int30-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int33-2-compliant.c">
+			<Option target="int33-2-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int33-2-noncompliant.c">
+			<Option target="int33-2-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int33-compliant.c">
+			<Option target="int33-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/int33-noncompliant.c">
+			<Option target="int33-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/mem31-compliant.c">
+			<Option target="mem31-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/mem31-noncompliant.c">
+			<Option target="mem31-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Praktikum3\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

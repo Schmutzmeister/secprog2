@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/int30-2-noncompliant.dir/int30-2-noncompliant.c.o  -o ../bin/int30-2-noncompliant 

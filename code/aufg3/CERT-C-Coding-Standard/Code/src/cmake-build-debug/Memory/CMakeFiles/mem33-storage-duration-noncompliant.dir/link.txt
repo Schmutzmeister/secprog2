@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/mem33-storage-duration-noncompliant.dir/mem33-storage-duration-noncompliant.c.o  -o ../bin/mem33-storage-duration-noncompliant 

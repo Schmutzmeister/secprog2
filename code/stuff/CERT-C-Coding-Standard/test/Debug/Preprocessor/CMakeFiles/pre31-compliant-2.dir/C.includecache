@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Preprocessor/pre31-compliant-2.c
+stdio.h
+-
+math.h
+-
+complex.h
+-
+

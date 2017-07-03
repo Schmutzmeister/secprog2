@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/FloatingPoint/flp30-compliant.c
+stdio.h
+-
+stddef.h
+-
+

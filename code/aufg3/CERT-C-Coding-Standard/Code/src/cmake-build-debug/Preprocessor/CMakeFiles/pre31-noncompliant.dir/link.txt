@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/pre31-noncompliant.dir/pre31-noncompliant.c.o  -o ../bin/pre31-noncompliant 

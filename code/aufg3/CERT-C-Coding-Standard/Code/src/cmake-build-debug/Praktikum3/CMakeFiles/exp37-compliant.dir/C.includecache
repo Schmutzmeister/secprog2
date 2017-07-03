@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/Code/src/Praktikum3/exp37-compliant.c
+tgmath.h
+-
+

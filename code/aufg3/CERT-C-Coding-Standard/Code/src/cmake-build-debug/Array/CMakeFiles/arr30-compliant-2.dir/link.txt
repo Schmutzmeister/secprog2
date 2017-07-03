@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/arr30-compliant-2.dir/arr30-compliant-2.c.o  -o ../bin/arr30-compliant-2 

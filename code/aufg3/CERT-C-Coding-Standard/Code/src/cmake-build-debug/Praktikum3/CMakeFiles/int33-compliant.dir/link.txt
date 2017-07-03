@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/int33-compliant.dir/int33-compliant.c.o  -o ../bin/int33-compliant 

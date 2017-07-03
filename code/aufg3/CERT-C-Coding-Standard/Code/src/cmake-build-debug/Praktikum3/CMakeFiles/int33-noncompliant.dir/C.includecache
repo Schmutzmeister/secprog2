@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/putin/Projects/git/secprog2/code/aufg3/CERT-C-Coding-Standard/src/Praktikum3/int33-noncompliant.c
+limits.h
+-
+

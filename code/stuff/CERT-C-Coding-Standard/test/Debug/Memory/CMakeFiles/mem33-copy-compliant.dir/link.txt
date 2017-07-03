@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/mem33-copy-compliant.dir/mem33-copy-compliant.c.o  -o ../bin/mem33-copy-compliant 

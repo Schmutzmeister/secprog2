@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="C-Secure-Coding"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Array\;CMake Files\Environment\;CMake Files\FloatingPoint\;CMake Files\Declarations\;CMake Files\Integers\;CMake Files\Memory\;CMake Files\Preprocessor\;CMake Files\Strings\;CMake Files\Testing\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr30-compliant-1">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr30-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr30-compliant-1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr30-compliant-1/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr30-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr30-compliant-1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr37-compliant-2">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr37-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr37-compliant-2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr37-compliant-2/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr37-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr37-compliant-2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr30-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr30-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr30-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr30-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr30-compliant-2">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr30-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr30-compliant-2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr30-compliant-2/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr30-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr30-compliant-2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr37-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr37-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr37-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr37-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr37-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr37-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr37-compliant-1">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr37-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr37-compliant-1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arr37-compliant-1/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/arr37-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 arr37-compliant-1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Array/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="env30-compliant-2">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/env30-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 env30-compliant-2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="env30-compliant-2/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/env30-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 env30-compliant-2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="env30-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/env30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 env30-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="env30-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/env30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 env30-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="env30-compliant-1">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/env30-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 env30-compliant-1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="env30-compliant-1/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/env30-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 env30-compliant-1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Environment/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flp30-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/flp30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 flp30-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flp30-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/flp30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 flp30-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flp30-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/flp30-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 flp30-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flp30-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/flp30-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 flp30-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/FloatingPoint/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dcl30-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/dcl30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 dcl30-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dcl30-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/dcl30-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 dcl30-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dcl30-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/dcl30-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 dcl30-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dcl30-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/dcl30-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 dcl30-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Declarations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int35-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/int35-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 int35-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="int35-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/int35-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 int35-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Integers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-copy-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-copy-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-copy-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-copy-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-copy-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-copy-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-copy-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-copy-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-copy-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-copy-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-copy-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-copy-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-storage-duration-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-storage-duration-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-storage-duration-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-storage-duration-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-storage-duration-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-storage-duration-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-storage-duration-compliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-storage-duration-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-storage-duration-compliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mem33-storage-duration-compliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/mem33-storage-duration-compliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 mem33-storage-duration-compliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Memory/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pre31-compliant-2">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/pre31-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 pre31-compliant-2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pre31-compliant-2/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/pre31-compliant-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 pre31-compliant-2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pre31-noncompliant">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/pre31-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 pre31-noncompliant"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pre31-noncompliant/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/pre31-noncompliant" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 pre31-noncompliant/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pre31-compliant-1">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/pre31-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 pre31-compliant-1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pre31-compliant-1/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/pre31-compliant-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 pre31-compliant-1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Preprocessor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testing">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 testing"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testing/fast">
+				<Option output="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin/testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/../../../../include/c++/7.1.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 testing/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/cmake-build-debug/Testing/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Array/arr30-compliant-1.c">
+			<Option target="arr30-compliant-1"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Array/arr30-compliant-2.c">
+			<Option target="arr30-compliant-2"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Array/arr30-noncompliant.c">
+			<Option target="arr30-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Array/arr37-compliant-1.c">
+			<Option target="arr37-compliant-1"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Array/arr37-compliant-2.c">
+			<Option target="arr37-compliant-2"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Array/arr37-noncompliant.c">
+			<Option target="arr37-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Declarations/dcl30-compliant.c">
+			<Option target="dcl30-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Declarations/dcl30-noncompliant.c">
+			<Option target="dcl30-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Environment/env30-compliant-1.c">
+			<Option target="env30-compliant-1"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Environment/env30-compliant-2.c">
+			<Option target="env30-compliant-2"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Environment/env30-noncompliant.c">
+			<Option target="env30-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/FloatingPoint/flp30-compliant.c">
+			<Option target="flp30-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/FloatingPoint/flp30-noncompliant.c">
+			<Option target="flp30-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Integers/int35-noncompliant.c">
+			<Option target="int35-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Memory/mem33-copy-compliant.c">
+			<Option target="mem33-copy-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Memory/mem33-copy-noncompliant.c">
+			<Option target="mem33-copy-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Memory/mem33-storage-duration-compliant.c">
+			<Option target="mem33-storage-duration-compliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Memory/mem33-storage-duration-noncompliant.c">
+			<Option target="mem33-storage-duration-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Preprocessor/pre31-compliant-1.c">
+			<Option target="pre31-compliant-1"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Preprocessor/pre31-compliant-2.c">
+			<Option target="pre31-compliant-2"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Preprocessor/pre31-noncompliant.c">
+			<Option target="pre31-noncompliant"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Testing/testing.c">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Array/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Array\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Environment/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Environment\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/FloatingPoint/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\FloatingPoint\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Declarations/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Declarations\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Integers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Integers\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Memory/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Memory\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Preprocessor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Preprocessor\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Strings/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Strings\"/>
+		</Unit>
+		<Unit filename="/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Testing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Testing\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

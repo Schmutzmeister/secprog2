@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/putin/Projects/git/secprog2/code/stuff/CERT-C-Coding-Standard/test/src/Integers/int35-noncompliant.c
+stdio.h
+-
+limits.h
+-
+

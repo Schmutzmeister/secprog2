@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/exp37-compliant.dir/exp37-compliant.c.o  -o ../bin/exp37-compliant 
